@@ -4,6 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My funny moments</title>
+    <style>
+      body {
+        margin-left: 50px;
+        font-family: sans-serif;
+      }
+      section {
+        max-width: 500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        /* margin-top: 250px; */
+        margin-bottom: 500px;
+      }
+      .container,
+      .inner {
+        /* width: 200px; */
+        height: 500px;
+      }
+      .container {
+        border: 2px solid steelblue;
+        background-color: aquamarine;
+        margin-bottom: 10px;
+      }
+      .inner {
+        border: 2px solid brown;
+        background-color: palegoldenrod;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        padding: 10%;
+      }
+      h1 {
+        text-align: center;
+        color: tomato;
+      }
+      .inner:hover {
+        transform: rotate(60deg) scale(0.75, 0.75) translateX(500px)
+          translateY(-300px);
+      }
+      .bg-1 {
+        background-image: url(assets/bear.jpg);
+      }
+      .bg-2 {
+        background-image: url(assets/police.jpg);
+      }
+      .bg-3 {
+        background-image: url(assets/fannyyy.png);
+      }
+      .bg-4 {
+        background-image: url(assets/art.jpg);
+      }
+      .bg-5 {
+        background-image: url(assets/my-funny-1.jpg);
+      }
+      .bg-6 {
+        background-image: url(assets/my-funny-2.jpg);
+      }
+      .bg-1,
+      .bg-2,
+      .bg-3,
+      .bg-4,
+      .bg-5,
+      .bg-6 {
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>My funny photos, taken by my friends</h1>
+    <section>
+      <div class="container bg-1">
+        <div class="inner">
+          My friends drew a beard and mustache on my photo with a marker pen.
+        </div>
+      </div>
+      <div class="container bg-2">
+        <div class="inner">Someone edited my photo like this.</div>
+      </div>
+      <div class="container bg-3">
+        <div class="inner">A photo taken from a video.</div>
+      </div>
+      <div class="container bg-4">
+        <div class="inner">
+          A photo where my friends made me handsome with colorful marker pens
+          because I am not good-looking.
+        </div>
+      </div>
+      <div class="container bg-5">
+        <div class="inner">
+          A photo taken while trying to pose nicely but ending up giving a
+          perfect pose
+        </div>
+      </div>
+      <div class="container bg-6">
+        <div class="inner">
+          A photo taken while trying to pose nicely but ending up giving a
+          perfect pose 2nd version
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
